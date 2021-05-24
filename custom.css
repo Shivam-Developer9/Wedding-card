@@ -1,0 +1,28 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+.vol-cont{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    z-index: 100;
+    right: 20px;
+    bottom: 20px;
+}
+.vol-cont img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.vol-tex{
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    color: #f00;
+    z-index: 100;
+}
+
+.cancel {
+    background-image: url("/images/vol-cancel.png");
+}
