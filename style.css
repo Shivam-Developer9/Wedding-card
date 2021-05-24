@@ -385,7 +385,7 @@ button:focus{
     text-align: center;
     vertical-align: middle;
 	position: relative;
-	top: 3rem;
+	top: 5rem;
 }
 
 .lbox-details::before{
@@ -417,7 +417,7 @@ button:focus{
 .lbox-details p{
 	color: #ffffff;
 	position: relative;
-	top: 6rem;
+	top: 7rem;
 	z-index: 3;
 }
 .lbox-details p strong{
