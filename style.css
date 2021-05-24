@@ -385,6 +385,7 @@ button:focus{
     text-align: center;
     vertical-align: middle;
 	position: relative;
+	top: 3rem;
 }
 
 .lbox-details::before{
@@ -402,8 +403,8 @@ button:focus{
 	font-size: 68px;
 	font-family: 'Marck Script', cursive;
 	color: #ffffff;
-	position: relative;
-	top: 40px;
+	/* position: relative;
+	top: 40px; */
 	z-index: 3;
 }
 
@@ -416,7 +417,7 @@ button:focus{
 .lbox-details p{
 	color: #ffffff;
 	position: relative;
-	top: 120px;
+	top: 6rem;
 	z-index: 3;
 }
 .lbox-details p strong{
@@ -802,44 +803,3 @@ footer {
 	position: absolute;
     width: 100%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
