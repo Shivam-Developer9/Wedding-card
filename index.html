@@ -55,7 +55,7 @@
     </div>
 	<!-- END LOADER -->
 
-	<div class="vol-tex" id="tex">Click to Listen Music</div>
+	<div class="vol-tex" id="tex"><i class="fas fa-arrow-down" style="font-size: 44px;"></i></div>
 	<div class="vol-cont" id="vol" onclick="handleMusic()"></div>
 
 	<!-- Start Banner -->
@@ -454,11 +454,32 @@
 		let tex = document.getElementById("tex")
 		let ele1 = '<img src="images.png" alt="">'
 		let ele2 = '<img src="vol-cancel.png" alt="">'
-		setTimeout(() => {
-			tex.style.visibility = "hidden";
-		}, 4000)
+		var stopper = true;
+		// setTimeout(() => {
+		// 	tex.style.visibility = "hidden";
+		// }, 4000)
 
-		
+		function hide()
+		{
+			tex.style.visibility = "hidden";
+			if(stopper)
+			{
+				setTimeout(function()
+				{
+					show();	
+				},100);
+			}
+			
+		}
+
+		function show()
+		{
+			tex.style.visibility = "visible";
+			setTimeout(function()
+			{
+				hide();	
+			},100);
+		}
 
 		if(performance.navigation.type == performance.navigation.TYPE_RELOAD){
 			music.muted = false;
@@ -467,6 +488,8 @@
 		}
 
 		window.onload = function(e) {
+			
+			hide();
 			music.muted = false;
 			music.play()
 			vol.innerHTML = ele1
@@ -481,6 +504,8 @@
 				vol.innerHTML = ele2
 			}
 			else{
+				stopper = false;
+				hide();
 				vol.classList.add("cancel")
 				music.muted = false
 				music.play()
