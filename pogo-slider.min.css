@@ -94,6 +94,7 @@
 
 .pogoSlider-dir-btn {
     position: absolute;
+    display: none;
     /* z-index: 10; */
     background: 0 0;
     /* width: 20px;
@@ -231,6 +232,7 @@
 }
 
 .pogoSlider-nav-btn {
+    display: none;
     background:transparent;
     /* background: rgba(255, 255, 255, .5); */
     border: none;
@@ -242,6 +244,7 @@
 }
 
 .pogoSlider-nav-btn--selected {
+    display: none;
     background:transparent;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .3)
 }
