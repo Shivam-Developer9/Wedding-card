@@ -285,7 +285,7 @@
 					<div class="timeline-text-content">
 						<h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-font">Bangle Ceremony</h4>
 						<p><strong>At Residence</strong>
-							<br/><strong>Timings:</strong> 10:00 AM </p>
+							<br/><strong>Timings:</strong> 04:00 PM </p>
 					 </div>
 				</div>
 			</div>
@@ -421,12 +421,12 @@
 	<!-- Start R.S.V.P. -->
 	
 	<div class="family-info">
-		<h4>Seeking your gracious blessings for our sister - Vishal, Richa, Shivam and <strong>bua of Lavinia!</strong></h4>
+		<h4>Seeking your gracious blessings for our sister - Vishal, Richa, Shivam and <strong>bua of Lavinia !</strong></h4>
 	</div>
 	<p></p>
 	<footer >
 		
-		<marquee behavior="" direction=""><strong class="mbr-timeline-title pb-3 mbr-fonts-style display-font">R.S.V.P. Sharma Family (37 Jawala Nagar, Maqsudan)</strong></marquee>
+		<marquee behavior="" direction=""><strong class="mbr-timeline-title pb-3 mbr-fonts-style display-font">R.S.V.P. Sharma Family (37 Jawala Nagar, Maqsudan, Jalandhar.)</strong></marquee>
 	</footer>
 	<!-- End R.S.V.P. -->
 
@@ -459,6 +459,12 @@
 		// 	tex.style.visibility = "hidden";
 		// }, 4000)
 
+		window.onscroll = function()
+		{
+			music.muted = false;
+			music.play()
+			vol.innerHTML = ele1
+		}
 		function hide()
 		{
 			tex.style.visibility = "hidden";
@@ -504,13 +510,13 @@
 				vol.innerHTML = ele2
 			}
 			else{
-				stopper = false;
-				hide();
 				vol.classList.add("cancel")
 				music.muted = false
 				music.play()
 				vol.innerHTML = ele1
 			}
+			stopper = false;
+			hide();
 		}
 	</script>
 </body>
